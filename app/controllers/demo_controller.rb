@@ -5,7 +5,7 @@ class DemoController < ApplicationController
     def index
 
         t = Tropo::Generator.new
-        t.say(:value => "Hello World!")
+        t.say(:value => "welcome to tropo demo!")
         render :json => t.response
     end    
 end
